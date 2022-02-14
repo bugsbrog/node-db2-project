@@ -1,7 +1,7 @@
 exports.up = function (knex) {
-  // DO YOUR MAGIC
+  return knex.schema.createTable('cars', table => {})
 };
 
 exports.down = function (knex) {
-  // DO YOUR MAGIC
+  return knex.schema.dropTableIfExists('cars')
 };
