@@ -11,6 +11,7 @@ const checkCarId = async (req, res, next) => {
                         message: `car with id ${id} is not found`
                     })
                 } else {
+                    req.car = carId
                     next()
                 }
         } catch (err) {
